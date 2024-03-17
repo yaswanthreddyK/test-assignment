@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+.app-container{
+  width: 100%;
+  background-color: black;
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+}
+
+.main-container{
+  width: 816px;
+  height: 974px;
+  color: black;
+  background-color: white;
+  position: relative;
+  display: flex;
+}
+
+.island{
+  width: 370px;
+  height: 326px;
+  border: 1px solid #EEEEEE;
+  border-radius: 6px;
+  padding: 10px 0px;
+  position: absolute;
+  left: 223px;
+  top: 161px;
+  box-shadow: 0 8px 15px 0 #1414141F, 0 0 4px 0 #1414141F;
+}
+
+.select-field{
+  width: 370px;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px 8px 22px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1F2128;
+}
+
+.toggle-btn{
+  width: 100%;
+  height: 42px;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+}
+
+.checkbox-container{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Default variant */
+
+.checkbox{
+  appearance: none;
+border: 1px solid #E3E3E3;
+ width: 23px;
+ height: 23px;
+ position: relative;
+ cursor: pointer;
+ border-radius: 6px;
+}
+
+.checkbox:after{
+  content: '';
+  position: absolute;
+  width: 15.64px;
+  height: 11.04px;
+  border: 1px solid #EEEEEE;
+  border-width: 0 0 1px 1px;
+  height: 7.54px;
+  transform: rotate(-45deg);
+   left:2.68px;
+  top: 3.5px; 
+  visibility: hidden;
+}
+
+/* variant 2 */
+
+.toggle-btn:hover .checkbox:after, .checkbox:hover .checkbox:after{
+  visibility: visible;
+}
+
+.checkbox:hover{
+  border-color: #BDBDBD;
+  }
+  
+.toggle-btn:hover .checkbox{
+  border-color: #BDBDBD;
+}
+
+
+/* variant 9 and variant 7 */
+.checkbox:active:after, .toggle-btn:active .checkbox:after{
+  border-color: #878787;
+}
+
+.checkbox:active, .toggle-btn:active .checkbox{
+  outline: 3px solid #e9f0fe;
+}
+
+.checkbox:checked:after{
+  border-color: #FFFF;
+  visibility: visible;
+}
+
+/* variant 6 and variant 4*/
+
+.toggle-btn:hover .checkbox:checked{
+  background-color: #5087F8;
+  border-color: #5087F8;
+}
+
+.checkbox:checked:hover{
+  background-color: #5087F8;
+  border-color: #5087F8;
+}
+
+
+/* variant 5 */
+
+.checkbox:checked{
+  background-color: #2469F6;
+  border-color: #2469F6;
+}
+
+.toggle-btn:active .checkbox:checked:after{
+  border-color: #FFFF;
+}
+
+
+.border{
+  margin: 10px 15px 10px 15px;
+  border: 0.7px solid #CDCDCD;
+  border-bottom: 0px;
+  width: 340px;
+  height: 0px;
+}
+
+
+.pages-list{
+  height: 164px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+
+/* submit-button css */
+
+
+.submit-btn-container{
+  width: 100%;
+  height: 60px;
+  padding:10px 15px 10px 15px;
+  display: flex;
+}
+
+.submit-btn{
+  background-color: #FFCE22;
+  border-radius: 4px;
+  width: 340px;
+  border: 0px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.submit-btn:hover{
+  background-color: #FFD84D;
+}
+
+.submit-btn:active{
+  background-color: #FFCE22;
+}
